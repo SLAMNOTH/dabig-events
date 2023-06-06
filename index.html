@@ -1,1 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+
+  color: white;
+
+}
+
+
+.event-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+        }
+
+        .event-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+        }
+
+        .event-info {
+            flex-grow: 1;
+            margin-left: 50px;
+            text-align: left;
+        }
+
+        .event-title {
+            font-size: 54px;
+            margin-bottom: 5px;
+        }
+
+        .event-date {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hetevent {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .tickets{
+            background: #0700CF;
+background: linear-gradient(to right, #0700CF 0%, #CF2B9E 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+ text-align: center;
+font-family: 'Poppins', sans-serif;
+        }
+
+        .event-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 10%;
+            object-fit: cover;
+        }
+
+   
+
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            .event-container {
+                margin-top: 50px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event-info {
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .event-title {
+                font-size: 20px;
+            }
+
+            .event-date {
+                font-size: 16px;
+                margin-bottom: 0px;
+            }
+
+            .hetevent {
+                font-size: 12px;
+                margin-bottom: 0px;
+            }
+
+            .tickets {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .event-image {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+
+
+.video-container {
+  position: relative;
+  height: 100vh;  /* Height is now set to the viewport height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+    background: #112ACF;
+background: linear-gradient(to right, #112ACF 0%, #8008CF 72%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h3{
+background: #0700CF;
+background: linear-gradient(to right, #0700CF 0%, #FF2626 50%, #74FF5E 50%, #80FFD0 50%, #CF2B9E 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.rest-of-content {
+  background-color: #1f1f1f; /* Or whatever color suits your design */
+  color: #ffffff; /* Or whatever color suits your design */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Same as before */
+}
+
+h1 {
+  font-size: 100px; /* default font size for h1 */
+}
+
+@media (max-width: 768px) {
+  /* Adjust font size for screens up to 768px wide */
+  h1 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font size for screens up to 480px wide */
+  h1 {
+    font-size: 58px;
+  }
+}
+
+
+h2 {
+  font-size: 30px; /* default font size for h1 */
+}
+
+@media (max-width: 768px) {
+  /* Adjust font size for screens up to 768px wide */
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font size for screens up to 480px wide */
+  h2 {
+    font-size: 18px;
+  }
+}
+
+
+
+
+h3 {
+  font-size: 30px; /* default font size for h1 */
+}
+
+@media (max-width: 768px) {
+  /* Adjust font size for screens up to 768px wide */
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust font size for screens up to 480px wide */
+  h3 {
+    font-size: 18px;
+  }
+}
+
+
+</style>
+
+<script>
+  
+  </script>
+
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+          <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+        </div>
+      </div>
+      <div class="rest-of-content">
+        <h1>Dabig Events</h1>
+        <h2>
+            Dabig Events is dé evenementenorganisator in Almelo en omstreken. Wij zijn gepassioneerd in het creëren van unieke en onvergetelijke ervaringen. Of het nu gaat om een bedrijfsfeest, conferentie, concert of bruiloft, wij zorgen ervoor dat elk evenement perfect georganiseerd wordt.
+        </h2>
+       <b> <h3>Tuinfeest. Verjaardag. Eigen Festival geven. Bedrijfsfeest. Conferentie. Concert. Bruiloft.</h3>
+       </b>
+
+       <div class="event-container">
+        <img class="event-image" src="SHOT.JPEG" alt="Dabig Festival">
+        <div class="event-info">
+            <h1 class="event-title">Dabig Festival</h1>
+            <b><p class="event-date">1 Juli 2023</p></b>
+            <p class="hetevent">Stap binnen in de wereld van eindeloze muzikale energie en onvergetelijke momenten op 1 juli 2023 bij Dabig Festival! Dit adembenemende evenement zal jouw zomer naar ongekende hoogten tillen. Bereid je voor op een dag vol opzwepende beats, verbazingwekkende optredens en een sfeer die je hart sneller doet kloppen.</p>
+            <center><a href="https://www.tickets.dabig.nl" class="tickets">Koop nu uw tickets</a></center>
+            
+        </div>
+    </div>
+
+
+
+</body>
+</html>
 
